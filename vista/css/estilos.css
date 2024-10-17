@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.horario li, .enlaces-rapidos li {
+    list-style: none;
+}
+
+.padre {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+    .header {
+        background-image: url("../img/barberia.jpeg");
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+        .menu {
+            background-color: rgba(0,0,0,0.1);
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            height: 100px;
+            text-align: center;
+        }
+            .logo {
+                flex: 1 1 auto;
+                transition: transform 0.2s ease-in-out 0s;
+            }
+                .logo a {
+                    font-size: 30px;
+                }
+                    .logo:hover {
+                        transform: scale(1.2);
+                        transition: transform 0.2s ease-in-out 0s;
+                    }
+            .nav {
+                display: flex;
+                flex: 5 1 auto;
+                justify-content: center;
+            }
+                .nav a {
+                    font-size: 11px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    padding: 0 10px;
+                    transition: transform 0.2s ease-in-out 0s;
+                }
+                    .nav a:hover {
+                        transform: scale(1.2);
+                        transition: transform 0.2s ease-in-out 0s;
+                    }
+            .social {
+                display: flex;
+                flex: 1 1 auto;
+                justify-content: center;
+            }
+                .social a {
+                    font-size: 18px;
+                    padding: 0 5px;
+                }
+                .social div {
+                    transition: transform 0.2s ease-in-out 0s;
+                }
+                    .social div:hover {
+                        transform: scale(1.2);
+                        transition: transform 0.2s ease-in-out 0s;
+                    }
+
+        .texto-principal {
+            height: 500px;
+            display: flex;
+            align-items: center;
+        }
+            h1 {
+                font-size: 21px;
+                color: #fff;
+                font-weight: 300;
+                text-align: center;
+                line-height: 1.6;
+            }
+
+
+.corte {
+    font-weight: bold;
+    color: #e1e1e1;
+    border-bottom: 1px solid #454545;
+    padding: 10px;
+}
+
+.precio {
+    padding: 10px;
+    color: #96885f;
+}
+
+.footer {
+    display: flex;
+    padding-top: 25px;
+    background: #1f1f1f;
+    color: #fff;
+    justify-content: space-around;
+}
+    .horario li, .enlaces-rapidos li {
+        margin-left: -30px;
+    }
+    
+        .enlaces-rapidos a {
+        text-decoration: none;
+        }
+
+.navegacion  {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+    .navegacion a {
+       padding: 10px;
+       text-decoration: none;
+       color: wheat;
+       border: 1px solid #495057;
+    }
+
+@media screen and (max-width:628px){
+    .menu {
+        flex-flow: column wrap;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .off {
+        display: none;
+    }
+}
+
+.precio::before {
+    content: "S/.";
+}
+
+.abs-center {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form {
+    width: 450px;
+  }
+
+
+
+
+  
+
+
+ 
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+  
+
+  
